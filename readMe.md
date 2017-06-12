@@ -41,3 +41,13 @@ This also requires J2SE 1.8 or above and Maven 4.0
 “creationTime”:
 “numOfNotificationsPushed”:
 </pre>
+
+### GetUsers:
+
+* This method requires no input and returns, as JSON array, the list of all the ussers registered using the above service.
+
+### SendMessage:
+
+* This method takes two parameters, userName and messageTxt.
+* If the userName supplied is one of the registered users, then sends the supplied text using the PushBullet service.
+* If not, gives a message back "User not found."
