@@ -1,0 +1,9 @@
+<project default="wsgen">
+ 
+ <target name="wsgen" >
+ 	<exec executable="C:\Program Files\Java\jdk1.8.0_131\bin\wsgen">
+		<arg line="-cp ./bin -keep -s ./src -d ./bin com.mytask.java.PushDemo"/>
+	</exec>      
+ </target>
+ 
+</project>
